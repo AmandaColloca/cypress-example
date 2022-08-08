@@ -1,0 +1,119 @@
+home:
+  logo:                       "//a[@class='logo']"
+  select_criar_conta:         "//div[@class='panel wrapper']//ul[@class='header links']//li[@class='customer-register links-container']//span[@role='button']"
+  select_criar_conta_cliente: "(//a[contains(text(), 'Criar novo cliente')])[1]"
+  select_criar_conta_empresa: "(//a[contains(text(), 'Criar uma Conta Empresa')])[1]"
+
+pagina_registro_conta_b2c:
+  select_criar_conta:         "//div[@class='panel wrapper']//ul[@class='header links']//li[@class='customer-register links-container']//span[@role='button']"
+  select_criar_conta_cliente: "(//a[contains(text(), 'Criar novo cliente')])[1]"
+  campo_nome:                 "//input[@name='firstname']"
+  campo_sobrenome:            "//input[@name='lastname']"
+  select_tipo_de_pessoa:      "//select[@name='person_type']"
+  option_pessoa_fisica:       "//option[@value='fisical']"
+  option_pessoa_juridica:     "//option[@value='legal']"
+  campo_cpf:                  "//input[@name='taxvat']"
+  campo_cnpj:                 "//input[@class='input-text validate-length maximum-length-255 required mask-cnpj']"
+  campo_razao_social:         "//input[@name='social_name']"
+  campo_nome_fantasia:        "//input[@name='business_name']"
+  campo_inscricao_estadual:   "//input[@name='state_registration']"
+  campo_email:                "//input[@id='email_address']"
+  campo_senha:                "//input[@name='password']"
+  campo_confirmacao_senha:    "//input[@name='password_confirmation']"
+  botao_criar_conta:          "//button[@title='Criar conta']"
+  botao_editar_inf_conta:     "//a[@class='action edit']"
+
+pagina_registro_conta_b2b: 
+  campo_nome_empresa_b2b:          "//input[@id='company_name']"
+  campo_email_empresa_b2b:         "//input[@id='company_email']"
+  campo_cnpj_empresa_b2b:          "//input[@id='vat_tax_id']"
+  campo_razao_social_b2b:          "//input[@id='legal_name']"
+  campo_nome_fantasia_b2b:         "//input[@id='business_name']"
+  checkbox_inscricao_estadual_b2b: "//input[@id='acquit']"
+  campo_endereco_b2b:              "//input[@id='street0']"
+  campo_numero_b2b:                "//input[@id='street1']"
+  campo_bairro_b2b:                "//input[@id='street2']"
+  option_estado_b2b:               "//option[@value='508']"
+  campo_cidade_b2b:                "//input[@id='city']"
+  campo_cep_b2b:                   "//input[@id='postcode']"
+  campo_telefone_b2b:              "//input[@id='telephone']"
+  campo_email_adm_b2b:             "//input[@id='email_address']"
+  campo_nome_adm_b2b:              "//input[@id='firstname']"
+  campo_sobrenome_adm_b2b:         "//input[@id='lastname']"
+  campo_cpf_adm_b2b:               "//input[@id='taxvat']"
+  botao_enviar_b2b:                "//button[@class='action save primary']"
+  mensagem_cnpj_invalido_b2b:      "//div[@id='vat_tax_id-error']"
+  mensagem_cpf_b2b:                "//div[@id='taxvat-error']"
+
+adyen:
+  select_cartao_credito_adyen:   "//div[@class='adyen-sprite adyen_cc']"
+  select_cartao:                 "//select[@id='adyen-combo-card-select']"
+  option_tipo_cartao_adyen:      "//option[@value='credit']"
+  iframe_numero_cartao_adyen:    "//*[@id='cardContainer']/div/div/div[2]/div[1]/div[1]/label/span[2]/span/iframe"
+  iframe_validade_cartao_adyen:  "//*[@id='cardContainer']/div/div/div[2]/div[1]/div[2]/div[1]/label/span[2]/span/iframe"
+  iframe_codigo_seguranca_adyen: "//*[@id='cardContainer']/div/div/div[2]/div[1]/div[2]/div[2]/label/span[2]/span/iframe"
+  campo_numero_cartao_adyen:     "//div[@aria-live='polite']//input[@autocomplete='cc-number']"
+  campo_titular_cartao_adyen:    "//*[@id='cardContainer']/div/div/div[2]/div[2]/label/span[2]/input"
+  campo_validade_cartao_adyen:   "//div[@aria-live='polite']//input[@autocomplete='cc-exp']"
+  campo_codigo_seguranca_adyen:  "//div[@aria-live='polite']//input[@autocomplete='cc-csc']"
+  alert_cancelado:               "//div[@role='alert']"
+
+
+braspag:
+  select_boleto_braspag:         "//span[text()='Boleto Bancário via Braspag']"
+  select_cartao_credito_braspag: "//span[text()='Cartão de Crédito via Braspag']"
+  campo_numero_cartao_braspag:   "//input[@name='payment[campo_numero_cartao_braspag]']"
+  campo_titular_cartao_braspag:  "//input[@name='payment[campo_titular_cartao_braspag]']"
+  campo_validade_ano_braspag:    "//option[@value=2022]"
+  campo_validade_mes_braspag:    "//option[@value=5]"
+  campo_codigo_seguranca:        "//input[@name='payment[cc_cid]']"
+  botao_finalizar:               "//button[@title='Finalizar Pedido']"
+
+carrinho:
+  botao_adicionar_carrinho:  "//button[@title='Adicionar ao Carrinho']"
+  icone_carrinho:            "//span[@class='counter qty']"
+  botao_prosseguir_checkout: "//button[@title='Avançar para o Checkout']"
+
+pagina_sucesso:
+  texto_numero_pedido: "//a[@class='order-number']"
+
+checkout_visitante:
+  campo_email_usuario_visitante:     "//input[@name='username']"
+  campo_cpf_usuario_visitante:       "//input[@name='custom_attributes[taxvat]']"
+  campo_nome_usuario_visitante:      "//input[@name='firstname']"
+  campo_sobrenome_usuario_visitante: "//input[@name='lastname']"
+  campo_cep_usuario_visitante:       "//input[@name='postcode']"
+  campo_numero_usuario_visitante:    "//input[@name='street[1]']"
+  campo_telefone_usuario_visitante:  "//input[@name='telephone']"
+  botao_continue_usuario_visitante:  "//button[@class='button action continue primary']"
+  carregamento_checkout:             "//div[@id='checkout-loader']"
+  mascara_checkout:                  "//div[@class='loading-mask']"
+
+campos_login:
+  botao_login:           "//a[@href='https://staging-5em2ouy-d7bbsnwi7oasu.us-4.magentosite.cloud/default/customer/account/login/referer/aHR0cHM6Ly9zdGFnaW5nLTVlbTJvdXktZDdiYnNud2k3b2FzdS51cy00Lm1hZ2VudG9zaXRlLmNsb3VkL2RlZmF1bHQv/']"
+  campo_login_email:     "//input[@id='email']"
+  campo_login_senha:     "//input[@id='pass']"
+  botao_finalizar_login: "//button[@class='action login primary']"
+
+produtos:
+  select_produto_simples: "//a[@title='Produto Simples']"
+  select_produto_virtual: "//a[@title='Aula de Yoga']"
+
+cartao_de_presente: 
+  localizar_cartao_presente: "//a[@title='Produto Gift Virtual - Cartão de Presente']"
+  option_valor:              "//option[@value='50']"
+  campo_nome_remetente:      "//input[@name='giftcard_campo_nome_remetente']"
+  campo_email_remetente:     "//input[@name='giftcard_campo_email_remetente']"
+  campo_nome_destinatario:   "//input[@name='giftcard_campo_nome_destinatario']"
+  campo_email_destinatario:  "//input[@name='giftcard_campo_email_destinatario']"
+
+produto_configuravel:
+  localizar_produto_configuravel: "//a[@title='Produto Configurável']"
+  option_tamanho_produto:         "//div[@option-label='M']"
+
+produto_agrupado: 
+  localizar_produto_agrupado: "//a[@title='Agrupado']"
+
+produto_bundle:      
+  localizar_produto_bundler: "//a[@title='Bundle']"
+  botao_personalizar:        "//button[@class='action primary botao_personalizar']"

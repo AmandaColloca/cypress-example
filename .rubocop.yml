@@ -1,0 +1,18 @@
+AllCops:
+  Exclude:
+    - features/support/hooks.rb
+    - features/support/env.rb
+    - features/support/report.rb
+    - features/step_definitions/*.rb
+    - features/support/module/*.rb
+    
+# LineLength increased due to steps validations that needs to handle more details
+# in their respective descriptions
+Metrics/LineLength:
+  Max: 160
+
+Lint/Debugger:
+  Enabled: false
+
+Security/Eval:
+  Enabled: false

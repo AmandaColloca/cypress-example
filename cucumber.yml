@@ -1,0 +1,6 @@
+default: --no-source --color --format pretty --publish-quiet
+
+qa_local: -p default chrome=true QA=true
+qa_report: -p default chrome=true QA=true screenshot=true
+qa_headless: -p default chrome_headless=true QA=true
+qa_headless_report: -p default chrome_headless=true QA=true screenshot=true

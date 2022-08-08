@@ -1,0 +1,7 @@
+#URL de acesso
+Carbono: "https://staging-5em2ouy-d7bbsnwi7oasu.us-4.magentosite.cloud/"
+
+#Login (customer)
+user:
+  login: "teste@mailinator.com"
+  pass:  "Senha123"
